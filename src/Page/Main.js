@@ -7,7 +7,7 @@ export default class Main extends Component {
     this.state = {
       number: 0,
       min: 0,
-      max: 4,
+      max: 100,
       colors: ["transparent", "transparent", "transparent", "transparent"],
     };
 
@@ -18,7 +18,7 @@ export default class Main extends Component {
           "transparent",
           "transparent",
         ],
-        _changeColor = ["black", "black", "black", "red"];
+        _changeColor = ["white", "white", "white", "#d49466"];
       for (let i = 0; i < colors.length; ++i)
         if (number >= i + 1) colors[i] = _changeColor[i];
       return colors;
@@ -43,10 +43,8 @@ export default class Main extends Component {
     return (
       <div className="Main">
         <div className="buttonWrapper">
-          <div className="cart">장바구니</div>
-          <div>
-            <div className="totalNum">상품 개수: {this.state.number}</div>
-          </div>
+          <div className="cart">Cart</div>
+          <div className="totalNum">상품 개수: {this.state.number}</div>
           <input
             type="button"
             className="minusBtn"
@@ -65,9 +63,7 @@ export default class Main extends Component {
             let list = [];
             const colors = this.state.colors;
             for (let i = 0; i < colors.length; ++i)
-              list.push(
-                <li style={{ backgroundColor: colors[i] }}>{i + 1}</li>
-              );
+              list.push(<li style={{ backgroundColor: colors[i] }}></li>);
             return list;
           })()}
         </ul>

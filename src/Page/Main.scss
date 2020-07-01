@@ -1,10 +1,26 @@
+body {
+  margin: 0;
+}
+
 .Main {
   display: flex;
-  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: #263343;
   .buttonWrapper {
+    color: white;
     text-align: center;
     .cart {
-      font-size: 50px;
+      font-size: 30px;
+    }
+    .totalNum {
+      padding: 10px 0;
+    }
+    input {
+      width: 50px;
+      cursor: pointer;
+      margin: 0 3px;
     }
   }
   .emptyStamps {
@@ -12,11 +28,11 @@
     padding-left: 300px;
     list-style: none;
     li {
-      padding: 20px;
-      width: 30px;
-      border-radius: 500px;
-      border: 1px solid black;
-      text-align: center;
+      margin: 10px;
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      border: 1px solid white;
     }
   }
 }
