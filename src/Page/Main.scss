@@ -1,0 +1,23 @@
+.Main {
+  display: flex;
+  padding: 50px;
+}
+.buttonWrapper {
+  text-align: center;
+  .cart {
+    font-size: 50px;
+  }
+}
+
+.emptyStamps {
+  display: flex;
+  padding-left: 300px;
+  list-style: none;
+  li {
+    padding: 20px;
+    width: 30px;
+    border-radius: 500px;
+    border: 1px solid black;
+    text-align: center;
+  }
+}
