@@ -18,7 +18,7 @@ export default class Main extends Component {
           "transparent",
           "transparent",
         ],
-        _changeColor = ["black", "red", "blue", "yellow"];
+        _changeColor = ["black", "black", "black", "red"];
       for (let i = 0; i < colors.length; ++i)
         if (number >= i + 1) colors[i] = _changeColor[i];
       return colors;
