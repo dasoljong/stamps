@@ -45,9 +45,7 @@ export default class Main extends Component {
         <div className="buttonWrapper">
           <div className="cart">장바구니</div>
           <div>
-            <div className="totalNum" onChange={this.handleStamps}>
-              상품 개수: {this.state.number}
-            </div>
+            <div className="totalNum">상품 개수: {this.state.number}</div>
           </div>
           <input
             type="button"
